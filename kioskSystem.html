@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiosk Order System</title>
+
+<!-- Google Material Symbols 폰트 불러오기 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+  <!-- Pretendard (한글) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css">
+
+  <!-- Mozilla Text (영문) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/kioskSystem.css">
+</head>
+
+
+<body>
+  <header class="navbar">
+    <!-- 왼쪽: 로고 -->
+    <div class="nav-logo">
+      <a href="/">JI'S HOUSE</a>
+    </div>
+  
+    <!-- 오른쪽: 메뉴 + 아이콘 (nav-right로 묶기) -->
+    <div class="nav-right">
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="nav-icons">
+        <a href="#"><span class="material-symbols-outlined">search</span></a>
+        <a href="#"><span class="material-symbols-outlined">for_you</span></a>
+        <a href="#"><span class="material-symbols-outlined">shopping_cart</span></a>
+      </div>
+    </div>
+  </header>
+  
+  
+  
+  <!-- <h1>JI'S HOUSE</h1> -->
+  <section class="menu">
+    <h2> - Menu -</h2>
+    <article data-name="트레디셔널 다크" data-price="5000">
+      <img src="https://ecimg.cafe24img.com/pg594b08546552063/brownhaus1/web/product/medium/20240125/313770e8b0efd7ec72508a5e3b737ddf.jpg" alt="트레디셔널 다크">
+      <h3>트레디셔널 다크</h3>
+      <p>Traditional Dark</p>
+      <p>고소한 아로마와 강렬한 바디감</p>
+      <p>7,000원</p>
+    </article>
+    <article data-name="이클립스 골드" data-price="9000">
+      <img src="https://ecimg.cafe24img.com/pg594b08546552063/brownhaus1/web/product/medium/20240125/d52fd593173234c09fdde725bf54f85d.jpg" alt="이클립스 골드">
+      <h3>이클립스 골드</h3>
+      <p>Eclips Gold</p>
+      <p>은은하고 부드러운 단맛의 편안함</p>
+      <p>7,500원</p>
+    </article>
+    <article data-name="레인 에스프레소" data-price="5900">
+      <img src="https://ecimg.cafe24img.com/pg594b08546552063/brownhaus1/web/product/medium/20240125/58cb7a930209cd8853230f7eedf16602.jpg" alt="레인 에스프레소">
+      <h3>레인 에스프레소</h3>
+      <p>Lane Espresso</p>
+      <p>다크 초콜릿 뉘앙스의 훌륭한 밸런스</p>
+      <p>5,900원</p>
+    </article>
+  </section>
+  <section class="cart">
+    <h2>Cart</h2>
+    <div id="cartItems">
+      <!-- 메뉴추가됨 -->
+    </div>
+    <h3 class="total">
+      Total: <span id="totalAmount">0</span>원
+    </h3>
+  </section>
+  <script src="./js/kioskSystem.js"></script>
+</body>
+
+</html>
